@@ -106,7 +106,7 @@ nav ul li a:hover{
 	border-bottom: 2px solid #FFCC00;
 }
 
-#about_section{
+#about, #contact, #team{
 	/*width:auto;
 	max-width:900px;
 	margin:0 auto;
@@ -119,12 +119,44 @@ nav ul li a:hover{
 	position: relative;
 }
 
-#about_section p{
+p{
 
 	font-family: 'Open Sans', sans-serif;
 }
 
-#about_section h1{
+
+
+#about h1{
+	position:relative;
+	width:auto;
+	max-width:900px;
+	font-size:50px;
+	line-height:54px;
+	border-bottom:#CCC solid 1px;
+	color:#CCC;
+	font-family:'Lato',sans-serif;
+	margin:0 auto;
+	font-weight:700;
+	margin-top:20px;
+	margin-bottom: 30px;
+}
+
+#contact h1{
+	position:relative;
+	width:auto;
+	max-width:900px;
+	font-size:50px;
+	line-height:54px;
+	border-bottom:#CCC solid 1px;
+	color:#CCC;
+	font-family:'Lato',sans-serif;
+	margin:0 auto;
+	font-weight:700;
+	margin-top:20px;
+	margin-bottom: 30px;
+}
+
+#team h1{
 	position:relative;
 	width:auto;
 	max-width:900px;
