@@ -41,7 +41,7 @@ ul
 .main_back{
 	width: auto;
 	height:500px;
-	background-image: url(back.jpg);
+	background-image: url(img/back.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
     -moz-background-size: cover;
@@ -76,11 +76,22 @@ h1{
 	margin-left:132px;
 }
 
+#logo{
+	position: absolute;
+	left:0;
+}
+
+#logo img{
+	width:300px;
+	height: 81px;
+}
+
 nav
 {
 	position:absolute;
 	right:0;
-	bottom:0;
+	padding-top : 20px;
+	
 }
 
 nav ul{
@@ -98,6 +109,8 @@ nav ul li a{
 	text-transform: uppercase;
 	transition: all .25s ease;
 	font-weight:700;
+	text-decoration: none;
+	color: white;
 }
 
 nav ul li a:hover{
