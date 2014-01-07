@@ -1,0 +1,155 @@
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0px;
+}
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+.main_back{
+	width: auto;
+	height:500px;
+	background-image: url(back.jpg);
+	background-size: cover;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.top_bar{
+	padding-top:20px;
+	width:80%;
+	margin-left:auto;
+	margin-right: auto;
+	position: relative;
+}
+
+h1{
+	font-size: 50px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight:700;
+}
+
+
+.main_back h1{
+	font-size: 40px;
+	font-family: 'PT Sans', sans-serif;
+	font-weight:700;
+}
+
+.main_back p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: #4A463B;
+	margin-left:132px;
+}
+
+nav
+{
+	position:absolute;
+	right:0;
+	bottom:0;
+}
+
+nav ul{
+	
+}
+
+nav ul li{
+	display:block;
+	float:left;
+	padding:3px 15px;
+}
+
+nav ul li a{
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	transition: all .25s ease;
+	font-weight:700;
+}
+
+nav ul li a:hover{
+	color: #990000;
+	transition: 0.2s ease;
+	border-bottom: 2px solid #FFCC00;
+}
+
+#about_section{
+	/*width:auto;
+	max-width:900px;
+	margin:0 auto;
+	padding:70px 0 45px 0;*/
+	
+	padding-top:20px;
+	width:80%;
+	margin-left:auto;
+	margin-right: auto;
+	position: relative;
+}
+
+#about_section p{
+
+	font-family: 'Open Sans', sans-serif;
+}
+
+#about_section h1{
+	position:relative;
+	width:auto;
+	max-width:900px;
+	font-size:50px;
+	line-height:54px;
+	border-bottom:#CCC solid 1px;
+	color:#CCC;
+	font-family:'Lato',sans-serif;
+	margin:0 auto;
+	font-weight:700;
+	margin-top:20px;
+	margin-bottom: 30px;
+}
+
+/*.page-title{
+	position:relative;
+	width:auto;
+	max-width:900px;
+	text-align:center;
+	font-size:50px;
+	line-height:54px;
+	border-bottom:#CCC solid 1px;
+	color:#CCC;
+	font-family:'Lato',sans-serif;
+	margin:0 auto;
+	font-weight:700;
+	margin-top:20px;
+}*/
