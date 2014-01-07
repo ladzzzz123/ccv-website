@@ -15,6 +15,9 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        <script src="jquery-1.10.2.min.js"></script>
+
         
     </head>
     <body>
@@ -22,23 +25,11 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="main_back" data-0="background-position:0px 0px;" data-500="background-position:0px -250px;" style="background-position:0"> 
-            <!-- <header>
-
-                <h1>USC CCV</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#aboutcontent">About</a></li>
-                        <li><a href="#teampage">Team</a></li>
-                        <li><a href="#contactpage">Contact</a></li>
-                    </ul>
-                </nav>       
-            </header>  -->           
-        
+        <div class="main_back" data-0="background-position:0px 0px;" data-650="background-position:0px -250px;" style="background-position:0"> 
             <div class="top_bar">
-            <div id="logo">
-                <img src ="img/logo.png" />
-            </div>
+                <div id="logo">
+                    <img src ="img/logo.png" />
+                </div>
 
                 <nav>
                     <ul>
@@ -47,6 +38,15 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
+            </div>
+            <div id = "heading">
+                <p style="color:black">Welcome to </p>
+                <h1>Conquest Capital Ventures</h1>
+                <p>An undergraduate socially conscious venture capital fund</p><p> at the University of Southern California</p>
+                </br></br>
+                <p><a class="button_example" href="#about" >Learn More</a></p>
+                
+
             </div>
         </div>
          
@@ -65,21 +65,46 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
         
         <section id="contact">
             <h1 align="center">Contact Us</h1>
-            <form action="http://getsimpleform.com/messages?form_api_token=1ffcddb77b479af60fb26f08320bff7b" method="post" id ="contactform">
-              <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
-              <input type='hidden' name='redirect_to' value='http://fooey.com/thank-you.html' />
-              <!-- all your input fields here.... -->
-              <p>Name: <input type='text' name='name'/> </p>
-              <p>Email: <input type='text' name='email' /> </p>
-              <p>Message: </p><textarea name="message"></textarea>
-              </br>
-              <input type='submit' value='Submit' />
+            <form action="#" id='ajax-form'>
+              Name:
+              <br />
+              <input type="text" name="name" />
+              <br />
+              Email:
+              <br />
+              <input type="text" name="name" />
+              <br />
+              Message
+              <br />
+              <textarea name="message"></textarea>
+              <br />
+              <input type="submit" value="Submit!" />
             </form>
     
         </section>
 
-        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <!--Scripts -->
 
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script type="text/javascript">
+          $('#ajax-form').submit(function(){
+            $.ajax({
+              dataType: 'jsonp',
+              url: "http://getsimpleform.com/messages/ajax?form_api_token=1ffcddb77b479af60fb26f08320bff7b",
+              data: $('#ajax-form').serialize() 
+            }).done(function() {
+              //callback which can be used to show a thank you message
+              //and reset the form
+              //alert("");
+              $( "#dialog" ).dialog();
+            });
+            return false; //to stop the form from submitting
+          });
+        </script>
+        <div id="dialog" title="Message Sent!">
+            <p>Thank you, for contacting us</p>
+        </div>
+        <!--
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
