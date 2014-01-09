@@ -3,4 +3,4 @@ ccv-website
 
 Website for USC Conquest Capital Ventures - a student run socially conscious venture capital fund.
 
-Check out the site: wwww.sanke93.github.io/ccv-website
+Check out the site: sanke93.github.io/ccv-website
