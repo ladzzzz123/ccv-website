@@ -15,7 +15,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"> -->
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<script>
@@ -42,7 +42,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="main_back" data-0="background-position:0px 0px;" data-650="background-position:0px -250px;" style="background-position:0 0; "> 
+        <div class="main_back" data-0="background-position:0px 0px;" data-650="background-position:0px -180px;" style="background-position:0 0; "> 
             <div class="top_bar">
                 <div id="logo">
                     <img src ="img/logo.png" />
@@ -59,8 +59,7 @@
                 </nav>
             </div>
             <div id = "heading">
-                <p style="color:black">Welcome to </p>
-                <h1>Conquest Capital Ventures</h1>
+                <h1 class="leadin-head">Conquest Capital Ventures</h1>
                 <p>An undergraduate socially conscious venture capital fund</p><p> at the University of Southern California</p>
                 </br></br>
                 <p><a class="button_example" href="#about" >Learn More  &or;</a></p>
@@ -71,6 +70,7 @@
          
         <section id="about">
             <h1 align="center">About</h1>
+            <hr>
             <p>The mission of Conquest Capital Ventures is to establish and maintain an undergraduate venture capital 
 fund at the Marshall School of Business that invests in socially conscious, local start -ups. In addition to 
 providing seed capital for social ventures, the fund will create a unique experience for students to 
@@ -79,22 +79,26 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
         
         <section id="projects">
             <h1 align="center">Projects</h1>
+            <hr>
             <p>Comming Soon!</p>
         </section>
 
         <section id="team">
             <h1 align="center">Team</h1>
+            <hr>
             <p>Comming Soon!</p>
         </section>       
         
         
         <section id="news">
             <h1 align="center">News</h1>
+            <hr>
             <p>Comming Soon!</p>
         </section>
         
         <section id="contact">
             <h1 align="center">Contact Us</h1>
+            <hr>
             <form action="#" id='ajax-form'>
               Name:
               <br />
@@ -113,9 +117,7 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
     
         </section>
 
-        <!--
-
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
         <script type="text/javascript">
           $('#ajax-form').submit(function(){
             $.ajax({
@@ -125,7 +127,7 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
             }).done(function() {
               //callback which can be used to show a thank you message
               //and reset the form
-              //alert("");
+              //alert("");                        
               $( "#dialog" ).dialog();
             });
             return false; //to stop the form from submitting
@@ -135,17 +137,10 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
         <div id="dialog" title="Message Sent!">
             <p>Thank you, for contacting us</p>
         </div>
-        <!--
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>-->
-            <!--js stuff down here after the rest of the page has loaded-->
-   <!--  // <script type="text/javascript" src="skrollr.min.js"></script> -->
+            <script type="text/javascript" src="skrollr.min.js"></script>
+            <script type="text/javascript">
+              var s = skrollr.init();
+            </script>
 
     </body>
 </html>
