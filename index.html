@@ -15,7 +15,7 @@
         <link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+        <!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css"> -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
 	<script>
@@ -113,9 +113,9 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
     
         </section>
 
-        <!--Scripts -->
+        <!--
 
-        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script> -->
         <script type="text/javascript">
           $('#ajax-form').submit(function(){
             $.ajax({
@@ -145,23 +145,7 @@ develop a deeper understanding of start-ups, social enterprises and financial sp
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>-->
             <!--js stuff down here after the rest of the page has loaded-->
-    <script type="text/javascript" src="skrollr.min.js"></script>
-    <script type="text/javascript">
-    //var s = skrollr.init();
-    $(function() {
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-    </script>
+   <!--  // <script type="text/javascript" src="skrollr.min.js"></script> -->
+
     </body>
 </html>
