@@ -241,3 +241,37 @@ h1{
 	background-image: -o-linear-gradient(top, #1ab0ec, #1a92c2);
 	background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#1ab0ec, endColorstr=#1a92c2);
 }
+
+
+input[type="text"], input[type="email"], textarea{
+    
+    padding: 5px;   
+    border: 1px solid #DDDDDD;
+    margin: 20px, auto;
+    font: 400 12pt/20pt 'Open Sans';
+    width: 100%;
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+    
+    /*Applying CSS 3radius*/   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    /*Applying CSS3 box shadow*/
+    -moz-box-shadow: 0 0 2px #DDDDDD;
+    -webkit-box-shadow: 0 0 2px #DDDDDD;
+    box-shadow: 0 0 2px #DDDDDD;
+    margin-bottom: 10px;
+
+}
+input[type="text"], input[type="email"], textarea:hover
+{
+    border:1px solid #cccccc;
+}
+input[type="text"], input[type="email"], textarea:focus
+{
+    /*box-shadow:0 0 2px #FFFE00;*/
+}
